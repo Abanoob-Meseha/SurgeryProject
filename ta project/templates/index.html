@@ -1,0 +1,82 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Surgery Application!</title>
+  </head>
+  <body>
+  
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">Hospital GO</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+               <a class="nav-link" href="http://127.0.0.1:5000/" style="text-align:center">Home <span class="sr-only">(current)</span></a>
+               </li>
+               
+               <li class="nav-item">
+               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+               </li>
+            </ul>
+            
+         </div>
+         </nav>
+         <div class="bg-image" 
+            style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+            height: 100vh">
+            <div class="container" style="text-align:center">
+               <h1>Hi</h1>
+               <div text="text" >we are here to help you to: <br>  1) Save <br>  2) Order <br>  3) List  <br>    4) Schedule <br> Patient's surgeries and their Doctors and operation rooms<div>
+               <div class="sidenav">
+               <div class="login-main-text">
+                  <h2>Go now</h2>
+               </div>
+            </div>
+         </div>
+            <div  class="main">
+               <h2 style="text-align:center">Login from here to access all our services</h2>
+               <div class="col-md-6 col-sm-12" style="text-align:center" >
+                  <div class="login-form" style="width:500px; margin:0 auto; margin-left:300px;">
+                     <form action="" method="post">
+                        <div class="form-group" >
+                           <label>User Name</label>
+                           <input type="text" class="form-control" placeholder="User Name" name='username' value="{{
+          request.form.username }}" >
+                        </div>
+                        <div class="form-group" >
+                           <label>Password</label>
+                           <input type="password" class="form-control" placeholder="Password" name='password' value="{{
+          request.form.password }}" >
+                        </div>
+                        <button type="submit" class="btn btn-primary" value="Login" >Login Now</button>
+                     </form>
+                     {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+                  </div>
+               </div>
+            </div>
+
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
